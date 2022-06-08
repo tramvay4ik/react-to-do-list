@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  header {
+    background: #add;
+    color: #444;
+    padding: 15px 15px;
+    border-bottom: 1px solid #bbb;
+
+    h1 {
+      margin: 0;
+    }
+  }
+
+  main {
+    padding: 15px;
+    background-color: #fff;
+    flex: 1;
+  }
+
+  footer {
+    background-color: #eee;
+    padding: 15px;
+    border-top: 1px solid #bbb;
+  }
+
+  .btn {
+    border: 1px solid #bbb;
+    background-color: #add;
+    border-radius: 4px;
+    padding: 5px 15px;
+    color: #444;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #adb;
+    }
+  }
+}

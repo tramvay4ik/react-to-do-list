@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import data from "./data.json";
 //components
-import Header from "./components/Header";
 import ToDoList from "./components/ToDoList";
 import ToDoForm from './components/ToDoForm';
  
-import './App.css';
+import './App.scss';
  
 function App() {
     const [ toDoList, setToDoList ] = useState(data);
@@ -32,9 +31,15 @@ function App() {
 
     return (
         <div className="App">
-            <Header />
-            <ToDoList toDoList={toDoList} handleFilter={handleFilter} handleToggle={handleToggle} />
-            <ToDoForm addTask={addTask}/>
+            <header>
+                <h1>To Do List</h1>
+            </header>
+            <main>
+                <ToDoList toDoList={toDoList} handleFilter={handleFilter} handleToggle={handleToggle} />
+            </main>
+            <footer>
+                <ToDoForm addTask={addTask}/>
+            </footer>
         </div>
     );
 }

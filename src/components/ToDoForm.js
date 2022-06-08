@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 
 const ToDoForm = ({ addTask }) => {
@@ -16,7 +17,7 @@ const ToDoForm = ({ addTask }) => {
     return (
         <form onSubmit={handleSubmit}>
             <input value={userInput} type="text" onChange={handleChange} placeholder="Enter task..."/>
-            <button>Submit</button>
+            <button className="btn">Submit</button>
         </form>
     );
 };
